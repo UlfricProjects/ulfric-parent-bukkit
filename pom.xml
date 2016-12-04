@@ -10,13 +10,13 @@
 		<version>1.0.0</version>
 	</parent>
 
-	<groupId>com.ulfric.bukkit</groupId>
+	<groupId>com.ulfric.spigot</groupId>
 	<artifactId>parent</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<bukkit>1.8.8-R0.1-SNAPSHOT</bukkit>
+		<spigot>1.8.8-R0.1-SNAPSHOT</spigot>
 	</properties>
 
 	<dependencies>
@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot-api</artifactId>
-			<version>${bukkit}</version>
+			<version>${spigot}</version>
 			<scope>provided</scope>
 			<exclusions>
 				<exclusion>

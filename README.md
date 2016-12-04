@@ -1,2 +1,2 @@
-# ulfric-parent-bukkit
-Bukkit child of the Ulfric Parent
+# ulfric-parent-spigot
+Spigot child of the Ulfric Parent
