@@ -47,6 +47,12 @@
 
 		<dependency>
 			<groupId>com.ulfric.commons</groupId>
+			<artifactId>commons-cdi</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ulfric.commons</groupId>
 			<artifactId>commons-locale</artifactId>
 			<version>1.0.0</version>
 		</dependency>
