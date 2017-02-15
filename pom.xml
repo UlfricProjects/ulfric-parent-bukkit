@@ -16,7 +16,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<spigot>1.8.8-R0.1-SNAPSHOT</spigot>
+		<spigot.version>1.11.2-R0.1-SNAPSHOT</spigot.version>
 	</properties>
 
 	<dependencies>
@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot-api</artifactId>
-			<version>${spigot}</version>
+			<version>${spigot.version}</version>
 			<scope>provided</scope>
 			<exclusions>
 				<exclusion>
