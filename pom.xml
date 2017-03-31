@@ -47,13 +47,19 @@
 
 		<dependency>
 			<groupId>com.ulfric.commons</groupId>
-			<artifactId>commons-cdi</artifactId>
+			<artifactId>commons-locale</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.ulfric.commons</groupId>
-			<artifactId>commons-locale</artifactId>
+			<groupId>com.ulfric</groupId>
+			<artifactId>dragoon</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ulfric</groupId>
+			<artifactId>colony</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
