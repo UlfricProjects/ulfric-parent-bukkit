@@ -22,8 +22,8 @@
 	<dependencies>
 		<!-- PAPER -->
 		<dependency>
-			<groupId>com.destroystokyo.paper</groupId>
-			<artifactId>paper-api</artifactId>
+			<groupId>com.ulfric.lighter</groupId>
+			<artifactId>lighter-api</artifactId>
 			<version>${spigot.version}</version>
 			<scope>provided</scope>
 			<exclusions>
@@ -39,8 +39,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.destroystokyo.paper</groupId>
-			<artifactId>paper</artifactId>
+			<groupId>com.ulfric.lighter</groupId>
+			<artifactId>lighter-server</artifactId>
 			<version>${spigot.version}</version>
 			<scope>provided</scope>
 		</dependency>
