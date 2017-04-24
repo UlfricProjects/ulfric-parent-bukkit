@@ -20,10 +20,10 @@
 	</properties>
 
 	<dependencies>
-		<!-- SPIGOT API -->
+		<!-- PAPER -->
 		<dependency>
-			<groupId>org.spigotmc</groupId>
-			<artifactId>spigot-api</artifactId>
+			<groupId>com.destroystokyo.paper</groupId>
+			<artifactId>paper-api</artifactId>
 			<version>${spigot.version}</version>
 			<scope>provided</scope>
 			<exclusions>
@@ -38,7 +38,14 @@
 			</exclusions>
 		</dependency>
 
-		<!-- ULFRIC API -->
+		<dependency>
+			<groupId>com.destroystokyo.paper</groupId>
+			<artifactId>paper</artifactId>
+			<version>${spigot.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- ULFRIC -->
 		<dependency>
 			<groupId>com.ulfric.commons</groupId>
 			<artifactId>commons</artifactId>
@@ -56,19 +63,4 @@
 			<artifactId>dragoon</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-
-		<dependency>
-			<groupId>com.ulfric</groupId>
-			<artifactId>colony</artifactId>
-			<version>1.0.0</version>
-		</dependency>
 	</dependencies>
-
-	<repositories>
-		<repository>
-			<id>spigot-repo</id>
-			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-		</repository>
-	</repositories>
-
-</project>
