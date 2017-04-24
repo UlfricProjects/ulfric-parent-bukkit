@@ -20,15 +20,6 @@
     </properties>
 
     <dependencies>
-
-        <!-- CRAFTBUKKIT API -->
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>craftbukkit</artifactId>
-            <version>${spigot.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
         <!-- SPIGOT API -->
         <dependency>
             <groupId>org.spigotmc</groupId>
