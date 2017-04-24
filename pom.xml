@@ -1,87 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>com.ulfric</groupId>
-    <artifactId>parent</artifactId>
-    <version>1.0.0</version>
-  </parent>
+	<parent>
+		<groupId>com.ulfric</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
 
-  <groupId>com.ulfric.spigot</groupId>
-  <artifactId>parent</artifactId>
-  <version>1.0.0</version>
-  <packaging>pom</packaging>
+	<groupId>com.ulfric.spigot</groupId>
+	<artifactId>parent</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
 
-  <properties>
-    <spigot.version>1.11.2-R0.1-SNAPSHOT</spigot.version>
-  </properties>
+	<properties>
+		<spigot.version>1.11.2-R0.1-SNAPSHOT</spigot.version>
+	</properties>
 
-  <dependencies>
-    <!--Bukkit API-->
-    <dependency>
-      <groupId>org.bukkit</groupId>
-      <artifactId>bukkit</artifactId>
-      <version>${spigot.version}</version>
-      <scope>provided</scope>
-    </dependency>
+	<dependencies>
+		<!-- SPIGOT API -->
+		<dependency>
+			<groupId>org.spigotmc</groupId>
+			<artifactId>spigot-api</artifactId>
+			<version>${spigot.version}</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>junit</groupId>
+					<artifactId>junit</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.hamcrest</groupId>
+					<artifactId>hamcrest-library</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
-    <!--CraftBukkit-->
-    <dependency>
-      <groupId>org.bukkit</groupId>
-      <artifactId>craftbukkit</artifactId>
-      <version>${spigot.version}</version>
-      <scope>provided</scope>
-    </dependency>
+		<!-- ULFRIC API -->
+		<dependency>
+			<groupId>com.ulfric.commons</groupId>
+			<artifactId>commons</artifactId>
+			<version>1.0.0</version>
+            <scope>provided</scope>
+		</dependency>
 
-    <!-- SPIGOT API -->
-    <dependency>
-      <groupId>org.spigotmc</groupId>
-      <artifactId>spigot-api</artifactId>
-      <version>${spigot.version}</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>org.hamcrest</groupId>
-          <artifactId>hamcrest-library</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
+		<dependency>
+			<groupId>com.ulfric</groupId>
+			<artifactId>dragoon</artifactId>
+			<version>1.0.0</version>
+            <scope>provided</scope>
+		</dependency>
 
-    <!-- ULFRIC API -->
-    <dependency>
-      <groupId>com.ulfric.commons</groupId>
-      <artifactId>commons</artifactId>
-      <version>1.0.0</version>
-      <scope>provided</scope>
-    </dependency>
+		<dependency>
+			<groupId>com.ulfric.commons</groupId>
+			<artifactId>commons-locale</artifactId>
+			<version>1.0.0</version>
+            <scope>provided</scope>
+		</dependency>
+	</dependencies>
 
-    <dependency>
-      <groupId>com.ulfric</groupId>
-      <artifactId>dragoon</artifactId>
-      <version>1.0.0</version>
-      <scope>provided</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.ulfric.commons</groupId>
-      <artifactId>commons-locale</artifactId>
-      <version>1.0.0</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
-
-  <repositories>
-    <repository>
-      <id>spigot-repo</id>
-      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-    </repository>
-  </repositories>
+	<repositories>
+		<repository>
+			<id>spigot-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+		</repository>
+	</repositories>
 
 </project>
