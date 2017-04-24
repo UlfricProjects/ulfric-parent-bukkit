@@ -38,6 +38,13 @@
 			</exclusions>
 		</dependency>
 
+		<dependency>
+			<groupId>org.bukkit</groupId>
+			<artifactId>craftbukkit</artifactId>
+			<version>${spigot.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
 		<!-- ULFRIC API -->
 		<dependency>
 			<groupId>com.ulfric.commons</groupId>
@@ -54,12 +61,6 @@
 		<dependency>
 			<groupId>com.ulfric</groupId>
 			<artifactId>dragoon</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.ulfric</groupId>
-			<artifactId>colony</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
